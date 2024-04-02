@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    max-width: 1200px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+.top {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.top button {
+    background-color: white;
+    transition: background-color 0.5s ease; /*색변경애니메이션*/
+    margin: 5px;
+    text-align: center;
+    padding: auto;
+    border-radius: 5px;
+    border: none;
+}
+.top select {
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(220, 223, 226);
+}
+/* navigatior bar */
+nav li {
+    list-style: none;
+}
+nav .container img {
+    margin-left: 8px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+nav a:hover {
+    background-color: rgb(220, 223, 226);
+
+}
+nav img {
+    float: left;
+}
+nav div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+nav div .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+nav div ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    margin: 10px;
+}
+nav div .icon i {
+    margin-top: 10px;
+    font-size: 30px;
+}
+nav div .icon p {
+    margin-bottom: 10px;
+    font-size: 10px;
+    text-align: center;
+}
+/* header */
+.hd {
+    position: relative;
+    height: 480px;
+    text-align: center;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hd::before{
+    content: "";
+    position: absolute;
+    overflow: visible;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(./image/ESG배너_1920.png);
+    background-size: cover;
+    background-position: center center;
+
+}
+.hd .container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.hd h4 {
+    font-size: 20px;
+    color: white;
+}
+.hd h4:hover {
+    color: rgb(160, 169, 177);
+    cursor: pointer;
+}
+/* section */
+section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+    height: 80px;
+    font-size: 25px;
+    border: 3px solid rgb(202, 207, 210);
+    border-radius: 10px;
+    text-align: center;
+}
+section input {
+    width: 88%;
+    height: 100%;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 20px;
+}
+section button {
+    width: 15%;
+    height: 100%;
+    border: none;
+    background-color: rgb(11, 40, 87);
+}
+section button i {
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+/* article */
+section .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+section h1 {
+    margin-top: 30px;
+    font-size: 25px;
+    color: black;
+}
+section article img {
+    width: 100%;
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+}
+section article ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 0px;
+}
+section article ul li {
+    position: relative;
+}
+.p-author {
+    font-size: 15px;
+    text-align: center;
+
+}
+.p-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.p-time {
+    font-size: 12px;
+    text-align: center;
+}
+.p-fee {
+    text-align: center;
+
+}
+.p-good {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    margin-right: 5px;
+    z-index: 2;
+    color: rgb(231, 156, 156);
+
+}
+section article ul li {
+    margin: 20px;
+}
+/* footer */
+footer {
+    background-color: rgb(189, 185, 185);
+}
+footer p {
+    text-align: center;
+    color: white;
+}
