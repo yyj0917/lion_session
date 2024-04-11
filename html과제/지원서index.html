@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>멋쟁이사자 지원서</title>
+    
+        <meta property="og:title" content="멋쟁이사자 지원서">
+        <meta property="og:description" content="윤영준">
+        <meta property="og:image" content="./thumbnail.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container1">
+            <img src="theme_7.png" alt="멋사 사진" width="10%" height="10%">
+            <div class="text-container">
+                <h1>연세대학교 멋쟁이사자처럼 12기 지원서</h1>
+                <p style="background-color:aliceblue">
+                    내 아이디어를 내 손으로 구현해보고 싶다면 주목!<br>
+                    연세대학교 멋쟁이사자처럼에서 12기 아기사자를 모집합니다.<br>
+                    코딩 교육을 통해 자신의 아이디어를 서비스로 구현하고 나아가 창업을 꿈꾸는 분들의 많은 지원 부탁드립니다.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="container2">
+
+            <h2>1. 모집일정</h2>
+            <ul>
+                <li>서류 제출: 2/16 (금) 09:00 ~ 2/23 (금)</li>
+                <li>서류 합격자 발표: 2/26 (월) 오후 합격자 개별 공지</li>
+                <li>온라인 면접: 2/28 (수) ~ 2/29 (목)</li>
+                <li>최종 합격자 발표: 3/2 (토) 오후 합격자 개별 공지</li>
+            </ul>
+            <h2>2. 문의사항</h2>
+            <ul>
+                <li>
+                    오픈채팅:
+                    <a href="https://open.kakao.com/o/goFAEZfg">바로가기</a>
+                </li>
+                <li>
+                    인스타그램:
+                    <a href="https://www.instagram.com/likelion_yonsei/">@likelion_yonsei</a>
+                </li>
+            </ul>
+            <h3><u>서류 제출 기간을 꼭 확인하신 후 기간 내 제출 부탁드립니다.</u></h3>
+        </div>
+        <hr>
+        <form action="" method="post">
+            <div class="form-container1">
+                <fieldset class="first">
+                    <legend><h2>지원자 정보</h2></legend>
+                    <label for="name"> 이름: 
+                        <input type="text" id="name" required>
+                    </label>
+                    <br><br>
+                    <label for="stu_num"> 학번: 
+                        <input type="text" id="stu_num" required>
+                    </label>
+                    <br><br>
+                    <label for="date"> 생년월일:  
+                        <input type="date" id="date" required>
+                    </label>
+                    <br><br>
+                    <label for="grade"> 학년 및 학기  
+                        <select name="num" id="grade" required>
+                            <option value="1-1">1-1</option>
+                            <option value="1-2">1-2</option>
+                            <option value="2-1">2-1</option>
+                            <option value="2-2">2-2</option>
+                            <option value="3-1">3-1</option>
+                            <option value="3-2">3-2</option>
+                            <option value="4-1">4-1</option>
+                            <option value="4-2">4-2</option>
+                        </select>
+                    </label>
+                    <br><br>
+                    <label for="email"> 이메일:  
+                        <input type="text" id="email" required>
+                    </label>
+                    <br><br>
+                    <label for="phone_num"> 휴대폰 번호:  
+                        <input type="text" id="phone_num" required>
+                    </label>
+                </fieldset>
+                <fieldset class="second">
+                    <legend>
+                        <h2>트랙 선택 / 정기 조공 안내</h2>
+                    </legend>
+                    <h4>지원하고자 하는 트랙을 선택해 주시기 바랍니다. (중복 선택 불가)</h4>
+                    <input type="radio" name="track" value="frontend" required>프론트엔드
+                    <input type="radio" name="track" value="backend" required>백엔드
+                    <h4>멋쟁이사자처럼 학회원은 매달 최소 10만원씩 운영진에게 조공을 바쳐야 합니다.<br>얼마를 내시겠습니까?</h4>
+                    <label for="money">
+                        조공 금액: 
+                        <input type="number" step="10" min="0" max="50" required>
+                         만원 (최대 50만원)
+                    </label>
+                </fieldset>
+            </div>
+            <hr>
+            <div class="form-container2">
+                <fieldset class="first">
+                    <legend>
+                        <h2>문항</h2>
+                    </legend>
+                    <label for="motivation">
+                        1. 지원동기 <br>
+                        <textarea name="motivation" cols=100% rows="4" required></textarea>
+                    </label>
+                    <br><br>
+                    <label for="exprience">
+                        2. 협업경험 <br>
+                        <textarea name="motivation" cols=100% rows="4" required></textarea>
+                    </label>
+                    <br><br>
+                    <label for="service">
+                        3. 만들고 싶은 서비스 <br>
+                        <textarea name="motivation" cols=100% rows="4" placeholder="만들고 싶은 서비스" required></textarea>
+                    </label>
+                    <br><br>
+                    <label for="time">
+                        4. 코딩 공부에 얼마나 시간을 투자 할 생각이신가요? <br>
+                        <textarea name="motivation" cols=100% rows="2" required></textarea>
+                    </label>
+                    <br><br>
+                    <label for="file">
+                        5. 포트폴리오가 있다면 첨부해주세요. (선택사항) <br>
+                        <input type="file" id="file">
+                    </label>
+                </fieldset>
+                <fieldset class="second">
+                    <legend>
+                        <h2>비대면 면접 참석 가능 시간</h2>
+                    </legend>
+                    <br>
+                    <h3>가능한 시간을 모두 체크해주세요!</h3>
+                    <label for="2/28">
+                        1. 2/28<br>
+                        <input type="checkbox" id="2/28">10
+                        <input type="checkbox" id="2/28">11
+                        <input type="checkbox" id="2/28">12
+                        <input type="checkbox" id="2/28">1
+                        <input type="checkbox" id="2/28">2
+                        <input type="checkbox" id="2/28">3
+                    </label><br>
+                    <label for="2/29">
+                        2. 2/29<br>
+                        <input type="checkbox" id="2/29">10
+                        <input type="checkbox" id="2/29">11
+                        <input type="checkbox" id="2/29">12
+                        <input type="checkbox" id="2/29">1
+                        <input type="checkbox" id="2/29">2
+                        <input type="checkbox" id="2/29">3
+                    </label>
+                </fieldset>
+            </div>
+            <input type="submit" value="제출하기"></input>
+            <input type="submit" value="취소하기"></input>
+        </form>
+    </body>
+</html>

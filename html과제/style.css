@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Gugi", sans-serif;
+
+}
+.gugi-regular {
+    font-family: "Gugi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+.container1 {
+    display: flex;
+    justify-content: center;
+}
+.text-container {
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+}
+.text-container > h1 {
+    color: rgb(52, 48, 48);
+    margin-bottom: 10px;
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+    padding: 10px;
+    justify-content: space-around;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+legend {
+    text-align: center;
+}
+.form-container1 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form-container1 > fieldset {
+    padding: 10px;
+}
+.form-container1 > .first {
+    background-color: rgb(239, 209, 231);
+}
+.form-container1 > .second {
+    background-color: rgb(239, 237, 209);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-container2 {
+    
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form-container2 > fieldset {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-container2 > .first {
+    background-color: rgb(209, 239, 217);
+
+}
+.form-container2 > .second {
+    background-color: rgb(218, 209, 239);
+
+}
