@@ -116,6 +116,7 @@ nav div .icon p {
 .hd .container {
     height: 300px;
     width: 100vw;
+    box-sizing: border-box;
     position: relative;
     display: flex;
     flex-direction: row;
