@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Gugi", sans-serif;
+}
+
+.gugi-regular {
+    font-family: "Gugi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hw1-container {
+    width: 700px;
+    margin-top: 15px;
+    border: 2px black solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+.hw1-container > h1 {
+    font-size: 80px;
+    color: black;
+}
+.hw1-container > select {
+    margin-top: 20px;
+    width: 300px;
+    font-size: 50px;
+    border: 3px red solid;
+    padding: 10px;
+}
+.hw2-container {
+    width: 700px;
+    margin-top: 15px;
+    border: 2px black solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+.hw2-container > form {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+}
+.hw2-container > form > input{
+
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+#submit{
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+    height: 100px;
+}
+h2 {
+    font-size: 50px;
+    color: gray;
+}
+.hw3-container {
+    width: 700px;
+    margin-top: 15px;
+    border: 2px black solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100px;
+}
