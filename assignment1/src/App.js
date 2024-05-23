@@ -1,9 +1,11 @@
 import "./App.css";
 import { useState } from "react";
+import Box from "./box";
 
 const Homework = () => {
   const [inputText, setInputText] = useState("");
   const [comments, setComments] = useState([]);
+  const [edit, setEdit] = useState(-1);
 
   
 
@@ -12,21 +14,35 @@ const Homework = () => {
     //아무 입력도 없을 때에는 댓글이 작성되어선 안됩니다!
 
     if (inputText !== "") {
-      const newArr = comments.concat(inputText);
-      setComments(newArr);
+      if (edit === -1) {
+
+        const newArr = comments.concat(inputText);
+        setComments(newArr);
+      }
+      else {
+        const newComments = [...comments];
+        newComments[edit] = inputText;
+        setComments(newComments);
+      }
     }
-    console.log(comments.length)
+    setInputText("");
+    setEdit(-1);
 
   };
 
   const handleDeleteComment = (index) => {
-    console.log(index);
     ///이 부분을 작성해주세요 
     const newArr = [...comments.slice(0,index), ...comments.slice(index+1)];
     setComments(newArr);
 
   };
+  const handleChangeComment = (index) => {
+    document.querySelector("#input").value = comments[index];
+    
+    setEdit(index);
+    
 
+  }
   return (
     <>
       <header>
@@ -43,6 +59,7 @@ const Homework = () => {
             type="text"
             value={inputText}
             onChange={(e) => setInputText(e.target.value)}
+            id="input"
           />
           <button onClick={handleNewComment}>등록</button>
         </div>
@@ -50,9 +67,17 @@ const Homework = () => {
           <div key={idx} className="comments">
             <p>{item}</p>
             <button onClick={() => handleDeleteComment(idx)}>삭제</button>
+            <button onClick={() => handleChangeComment(idx)}>수정</button>
+
           </div>
         ))}
       </div>
+      <div className="box-container">
+        <Box></Box>
+        <Box></Box>
+        <Box></Box>
+      </div>
+
     </>
   );
 };

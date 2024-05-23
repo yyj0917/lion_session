@@ -1,10 +1,9 @@
 const formId = document.querySelector("form");
 const hw2Cont = document.querySelector(".hw2-container");
 
-const inputSubmit = document.getElementById("submit");
-
 
 formId.addEventListener('submit', (e) => {
+    console.log(e.currentTarget);
     e.preventDefault();
 
     const formData = new FormData(formId);
